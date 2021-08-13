@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+</head>
+<body>
+    <script>
+        function capitalizeFirstE(str){
+            let arr = str.split(" ");
+            let newStr = ""
+            let capitalize = "";
+            for(let i = 0; i < arr.length; i++){
+            capitalize = arr[i].charAt(0).toUpperCase() + arr[i].slice(1) ;
+                newStr = newStr + " " + capitalize
+            } 
+            return newStr
+        }
+            
+        console.log(capitalizeFirstE("this is giang")); 
+
+        
+    </script>
+</body>
+</html>
